@@ -1,0 +1,46 @@
+.grade-label {
+    /* Gaya dasar yang sudah ada di FXML bisa dipertahankan atau dipindah ke sini */
+    /* -fx-font-size: 14px; */
+    /* -fx-font-weight: bold; */
+    /* -fx-padding: 5 5 10 5; /* top right bottom left, disesuaikan dengan FXML: top=5, right=5, bottom=5, left=5 (HBox padding atas/bawah 10, padding gradeLabel atas 10) */
+    /* padding FXML asli: <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" /> */
+    /* Jadi CSS Padding: -fx-padding: 10 5 5 5; */
+}
+
+.grade-success {
+    -fx-background-color: #C8E6C9; /* Hijau Muda */
+    -fx-text-fill: #2E7D32;      /* Hijau Tua */
+    -fx-border-color: #A5D6A7;   /* Border sedikit lebih gelap */
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 10px 5px 5px 5px; /* Sesuaikan padding jika perlu agar konsisten */
+}
+
+.grade-partial {
+    -fx-background-color: #FFF9C4; /* Kuning Muda */
+    -fx-text-fill: #795548;      /* Coklat Tua / Amber gelap untuk kontras */
+    -fx-border-color: #FFF59D;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 10px 5px 5px 5px;
+}
+
+.grade-fail {
+    -fx-background-color: #FFCDD2; /* Merah Muda */
+    -fx-text-fill: #C62828;      /* Merah Tua */
+    -fx-border-color: #EF9A9A;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 10px 5px 5px 5px;
+}
+
+.grade-none {
+    /* Gaya default jika tidak ada nilai atau error, bisa dikosongkan agar mengambil style dari FXML/parent */
+    -fx-background-color: transparent;
+    -fx-text-fill: black; /* Atau warna teks default Anda */
+    -fx-border-color: transparent;
+    -fx-padding: 10px 5px 5px 5px; /* Samakan padding agar layout tidak bergeser */
+}
